@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Plate — доставка еды</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f8fc;
+    color: #333;
+}
+
+/* ===== Banner ===== */
+.banner {
+    margin: 20px;
+    background: #f2f2f2;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner img {
+    width: 300px;
+}
+
+.discount {
+    font-size: 48px;
+    color: #d6b6ff;
+    font-weight: bold;
+}
+
+/* ===== Categories ===== */
+.categories {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.category img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    margin-bottom: 8px;
+}
+
+/* ===== About ===== */
+.about {
+    background: #eef3ff;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* ===== Menu ===== */
+.menu {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    max-height: 140px;
+    object-fit: contain;
+}
+
+.card h4 {
+    margin: 10px 0;
+}
+
+.price {
+    background: #ffb703;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background: #ffd6d6;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: #333;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Banner -->
+<div class="banner">
+    <img src="fast-food-meal-with-ai-generated-free-png.webp" alt="Food">
+    <div class="discount">50% СКИДКА</div><br>
+     <div class="discount">СЕТ Double G</div>
+</div>
+
+<!-- Categories -->
+<div class="categories">
+    <div class="category" style="background-color: #bb6969;">
+        <img src="icons8-sushi-48.png">
+        <h3>Sushi</h3>
+        <p>Популярные блюда японской кухни</p>
+    </div>
+    <div class="category" style="background-color: #ff962c;">
+        <img src="icons8-pizza-100.png">
+        <h3>Pizza</h3>
+        <p>Классика с огромным выбором вкусов</p>
+    </div>
+    <div class="category" style="background-color: #f8c058;">
+        <img src="icons8-burger-50.png">
+        <h3>Burger</h3>
+        <p>Сочные бургеры на каждый день</p>
+    </div>
+    <div class="category" style="background-color: #ffdb58;">
+        <img src="icons8-fried-chicken-100.png">
+        <h3>Chicken</h3>
+        <p>Хрустящая курочка с соусами</p>
+    </div>
+</div>
+
+<!-- About -->
+<div class="about">
+    <p>
+        Идея ресторана <strong>Plate</strong> — простая и честная еда без лишнего пафоса.
+        Мы используем свежие продукты и готовим с вниманием к деталям,
+        чтобы каждая тарелка приносила удовольствие.
+    </p>
+</div>
+
+<!-- Menu -->
+ <h3 style="text-align: center;">Суши</h3>
+<div class="menu">
+    <div class="card">
+        <img src="philadelphia-sushi-roll-laying-on-white-background-photo.jpg">
+        <h4>Филадельфия</h4>
+        <div class="price">2190 ₸</div>
+    </div>
+    <div class="card">
+        <img src="35fb77b6-c2e4-4408-baa8-d2ea4ff77c55.webp">
+        <h4>Жареные</h4>
+        <div class="price">2390 ₸</div>
+    </div>
+    <div class="card">
+        <img src="i (17).webp">
+        <h4>Калифорния</h4>
+        <div class="price">2190 ₸</div>
+    </div>
+</div>
+
+<h3 style="text-align: center;">Суши</h3>
+<div class="menu">
+    <div class="card">
+        <img src="i (16).webp">
+        <h4>Дракон</h4>
+        <div class="price">2190 ₸</div>
+    </div>
+    <div class="card">
+        <img src="png.webp">
+        <h4>Эби ролл</h4>
+        <div class="price">2390 ₸</div>
+    </div>
+    <div class="card">
+        <img src="kanada.webp">
+        <h4>Канада
+
+        </h4>
+        <div class="price">2190 ₸</div>
+    </div>
+</div>
+
+<h3 style="text-align: center; margin-top: 40px;">Бургеры</h3>
+<div class="menu">
+    <div class="card">
+        <a href="https://burgerkingrus.ru/category/23" target="_blank">
+        <img src="i (23).webp">
+        </a>
+        <h4>Классический бургер</h4>
+        <div class="price">1990 ₸</div>
+    </div>
+    <div class="card">
+        <a href="https://burgerkingrus.ru/category/23" target="_blank">
+        <img src="privet.webp">
+        </a>
+        <h4>Чизбургер</h4>
+        <div class="price">2190 ₸</div>
+    </div>
+    <div class="card">
+        <a href="https://burgerkingrus.ru/category/23" target="_blank">
+        <img src="i (25).webp">
+        </a>
+        <h4>Double Burger</h4>
+        <div class="price">2590 ₸</div>
+    </div>
+</div>
+<div class="menu">
+    <div class="card">
+        <a href=""></a>
+        <img src="pro.webp">
+        </a>
+        <h4>Бургер с яйцом</h4>
+        <div class="price">1990 ₸</div>
+    </div>
+    <div class="card">
+        <img src="pro max.webp">
+        <a href="https://burgerkingrus.ru/category/23" target="_blank">
+        </a>
+        <h4>Острый бургер</h4>
+        <div class="price">2190 ₸</div>
+    </div>
+    <div class="card">
+        <a href="https://burgerkingrus.ru/category/23" target="_blank">
+        <img src="poka chjka.webp">
+        </a>
+        <h4>Бургер с чикеном</h4>
+        <div class="price">2590 ₸</div>
+    </div>
+</div>
+
+<h3 style="text-align: center; margin-top: 40px;">Пицца</h3>
+<div class="menu">
+    <div class="card">
+        <img src="i (20).webp">
+        <h4>Маргарита</h4>
+        <div class="price">2490 ₸</div>
+    </div>
+    <div class="card">
+        <img src="i (18).webp">
+        <h4>Пепперони</h4>
+        <div class="price">2790 ₸</div>
+    </div>
+    <div class="card">
+        <img src="i (21).webp">
+        <h4>4 Сезона
+        </h4>
+        <div class="price">2990 ₸</div>
+    </div>
+</div>
+<div class="menu">
+    <div class="card">
+        <img src="I 09.webp">
+        <h4>барбекю</h4>
+        <div class="price">2490 ₸</div>
+    </div>
+    <div class="card">
+        <img src="ghjp.webp">
+        <h4>Мясная</h4>
+        <div class="price">2790 ₸</div>
+    </div>
+    <div class="card">
+        <img src="kjh.webp">
+        <h4>Диабло</h4>
+        <div class="price">2990 ₸</div>
+    </div>
+</div>
+
+<h3 style="text-align: center; margin-top: 40px;">Чикен</h3>
+<div class="menu">
+    <div class="card">
+        <a href="https://www.kfc.kz/menu#chicken" target="_blank">
+        <img src="basket sanders duet.jpg">
+        </a>
+        <h4>Баскет сандерс дуэт </h4>
+        <div class="price">4790 ₸</div>
+    </div>
+    <div class="card">
+        <a href="https://www.kfc.kz/menu#chicken" target="_blank">
+        <img src="sanders basket.jpg">
+        </a>
+        <h4>Сандерс баскет</h4>
+        <div class="price">2590 ₸</div>
+    </div>
+    <div class="card">
+        <a href="https://www.kfc.kz/menu#chicken" target="_blank">
+        <img src="basket 4 legs.jpg">
+        </a>
+        <h4>Баскет 4 ножки</h4>
+        <div class="price">2990 ₸</div>
+    </div>
+</div>
+<div class="menu">
+    <div class="card">
+        <a href="https://www.kfc.kz/menu#chicken" target="_blank">
+        <img src="basket 24 krylev.jpg">
+        </a>
+        <h4>Баскет 24 крыльев</h4>
+        <div class="price">9090 ₸</div>
+    </div>
+    <div class="card">
+        <a href="https://www.kfc.kz/menu#chicken" target="_blank">
+        <img src="basket 8 legs.jpg">
+        </a>
+        <h4>Баскет 8 ножки</h4>
+        <div class="price">5390 ₸</div>
+    </div>
+    <div class="card">
+        <a href="https://www.kfc.kz/menu#chicken" target="_blank">
+        <img src="basket 12 legs.jpg">
+        </a>
+        <h4>Баскет 12 ножки</h4>
+        <div class="price">7590 ₸</div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>📞 +7-775-678-97-52</p>
+    <p>📨 @PlateCook</p>
+</div>
+
+</body>
+</html>
